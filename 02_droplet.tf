@@ -15,3 +15,4 @@ resource "digitalocean_droplet" "sam_web" {
 # terraform apply
 # ps fa # Check if cloud-init is running
 # grep cloud-init /var/log/syslog # In case of error, check the logs
+# tail -f /var/log/cloud-init-output.log # In case of error, check the logs
