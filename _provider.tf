@@ -21,3 +21,5 @@ provider "digitalocean" {
 # Commands to run terraform recipe:
 # terraform init
 # terraform plan
+# terraform apply
+# terraform destroy
