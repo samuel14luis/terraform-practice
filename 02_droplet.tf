@@ -6,7 +6,7 @@ resource "digitalocean_droplet" "sam_web" {
   region    = "nyc1"
   size      = "s-1vcpu-1gb"
   # user_data = file("./data/userdata.yaml")
-  user_data = file("./data/setup.sh")
+  user_data = file("./script/init.sh")
   ssh_keys = [digitalocean_ssh_key.sam_ssh_key.fingerprint]
 }
 
